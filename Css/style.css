@@ -1,4 +1,3 @@
-/* Importação da fonte e reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,7 @@ body {
     color: #555;
     font-style: italic;
 }
-/* Cabeçalho */
+
 header {
     background: linear-gradient(135deg, #1f3c88, #2e59d9);
     color: #fff;
@@ -48,19 +47,19 @@ header p {
     font-size: 1.1rem;
 }
 
-/* Container padrão */
+
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 2rem;
 }
 
-/* Seções */
+
 section {
     margin-bottom: 3rem;
 }
 
-/* Cards de tipos de ataque */
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -86,7 +85,7 @@ section {
     margin-bottom: 0.5rem;
 }
 
-/* Seção Quid Pro Quo */
+
 .quidproquo {
     background: #e8ecfc;
     border-left: 6px solid #2e59d9;
@@ -103,14 +102,14 @@ section {
     font-size: 1.05rem;
 }
 
-/* Lista de proteção */
+
 .protecao ul {
     list-style: disc;
     margin-left: 1.5rem;
     margin-top: 1rem;
 }
 
-/* Rodapé */
+
 footer {
     text-align: center;
     background: #1f3c88;
@@ -119,7 +118,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Efeito sutil ao rolar */
+
 section {
     opacity: 0;
     transform: translateY(30px);
