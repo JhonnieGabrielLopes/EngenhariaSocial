@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ataques Cibernéticos e Engenharia Social</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="aviso">
+            <div class="container">
+                <p>
+                    <strong>Você acabou de participar de um trabalho da turma de Segurança da Informação</strong> do curso de Análise e Desenvolvimento de Sistemas (ADS).  
+                    Fique tranquilo, não utilizamos nem armazenamos nenhuma informação que foi preenchida no formulário <strong>"Engenharia Social e Quid Pro Quo"</strong>.  
+                    Ficamos à disposição para sanar qualquer dúvida e agradecemos pela sua compreensão.  
+                    <br><br>
+                    <em>Orientador: Professor Gustavo</em>
+                </p>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <h1>Engenharia Social</h1>
+                <p>Como os ataques cibernéticos manipulam pessoas para obter informações</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div class="container">
+                    <h2>O que é Engenharia Social?</h2>
+                    <p>A engenharia social é uma técnica usada por cibercriminosos para enganar e manipular pessoas, levando-as a revelar informações confidenciais, clicar em links falsos ou executar ações prejudiciais sem perceber.</p>
+                </div>
+            </section>
+
+            <section class="tipos">
+                <div class="container">
+                    <h2>Principais tipos de ataques</h2>
+                    <div class="cards">
+                        <div class="card">
+                            <h3>Phishing</h3>
+                            <p>Mensagens falsas, geralmente por e-mail, que simulam empresas reais e pedem dados pessoais.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Vishing</h3>
+                            <p>Golpe por ligação telefônica, onde o criminoso se passa por um atendente legítimo.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Smishing</h3>
+                            <p>Mensagens de texto (SMS) com links falsos para roubo de informações ou instalação de malware.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="quidproquo">
+                <div class="container">
+                    <h2>O ataque Quid Pro Quo</h2>
+                    <p>
+                        O termo <strong>Quid Pro Quo</strong> significa "uma coisa pela outra" e, no contexto de ataques cibernéticos, 
+                        descreve uma técnica de engenharia social em que o invasor oferece algo em troca de informações ou acesso.
+                    </p>
+                    <p>
+                        Um exemplo comum é quando alguém se passa por um técnico de suporte e oferece ajuda gratuita para “resolver um problema” no computador, 
+                        pedindo que a vítima instale um programa ou forneça credenciais. Assim, o criminoso obtém acesso ao sistema ou dados sigilosos.
+                    </p>
+                    <p>
+                        Esses ataques exploram a boa vontade e a reciprocidade natural das pessoas, tornando-os extremamente eficazes — 
+                        especialmente em ambientes corporativos.
+                    </p>
+                </div>
+            </section>
+            <section class="protecao">
+                <div class="container">
+                    <h2>Como se proteger</h2>
+                    <ul>
+                        <li>Desconfie de mensagens urgentes pedindo dados pessoais.</li>
+                        <li>Verifique sempre o remetente de e-mails e links antes de clicar.</li>
+                        <li>Use autenticação de dois fatores sempre que possível.</li>
+                        <li>Mantenha antivírus e sistemas atualizados.</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 | Informativo sobre Engenharia Social | Desenvolvido por Jhonnie, Luiz e Amanda</p>
+        </footer>
+
+        <script>
+        const sections = document.querySelectorAll("section");
+        const showOnScroll = () => {
+            sections.forEach(sec => {
+                const top = sec.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) sec.classList.add("visible");
+            });
+        };
+        window.addEventListener("scroll", showOnScroll);
+        showOnScroll();
+        </script>
+
+    </body>
+</html>
